@@ -1,4 +1,5 @@
 +++
-sort_by = "date"
-paginate_by = 5
+title = "Punit Lodha"
 +++
+
+Hi, I am **Punit Lodha**, a computer engineering student from Mumbai. I have worked as a frontend developer and an UI/UX designer. Recently I have been experimenting with [rust](https://www.rust-lang.org/) and was selected as a GSoC student for [CCExtractor](https://ccextractor.org/) for a [project](https://summerofcode.withgoogle.com/projects/#5980303367077888) in rust. Also I have been exploring [distributed systems](http://nil.csail.mit.edu/6.824/2020/), compilers. In my free time you'll find me reading books, watching TV shows and ricing my linux desktop :)
