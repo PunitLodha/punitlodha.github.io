@@ -1,18 +1,48 @@
 # The URL the site will be built for
 base_url = "https://punitlodha.github.io"
 
+# Base
+title = "Punit Lodha"
+
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
-theme = "tale-zola"
+# Taxonomies
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10 },
+    { name = "tags", fees = true, paginate_by = 10 },
+]
+
+# Theme
+theme = "DeepThought"
+
+[slugify]
+taxonomies = "on"
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
+highlight_theme = "gruvbox-dark"
 
 [extra]
-# Put all your custom variables here
+navbar_items = [
+  { code = "en", nav_items = [
+  { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/posts", name = "Posts" },
+  { url = "$BASE_URL/tags", name = "Tags" },
+  { url = "$BASE_URL/categories", name = "Categories" },
+ ]},
+]
+
+# Author details
+[extra.author]
+name = "Punit Lodha"
+avatar = "/images/avatar.png"
+
+# Social links
+[extra.social]
+email = "punitlodha@pm.me"
+github = "PunitLodha"
+linkedin = "PunitLodha"
