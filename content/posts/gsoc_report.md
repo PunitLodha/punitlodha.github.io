@@ -16,12 +16,15 @@ Recently, I was selected as GSoC student with CCExtractor for the rewrite in rus
 
 <img id="gsoc" src="/images/logos.jpg" alt="GSoC logo"> 
 
-<!-- 
-![Google Summer of Code](https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-logo-horizontal-200.png)
-![CCExtractor](https://ccextractor.org/images/ccx.svg) -->
-
 # Introduction 
 This Project involves rewriting/porting the CEA-708 decoder to rust. CEA-708 is the standard for closed captioning for ATSC digital television (DTV) streams in the US and a few other countries. 
+
+# Project Details
+Organisation:- [CCExtractor](https://summerofcode.withgoogle.com/organizations/5433564985819136/)
+
+Project:- [Rewrite 708 decoder in Rust](https://summerofcode.withgoogle.com/projects/#5980303367077888)
+
+Source Code:- <https://github.com/CCExtractor/ccextractor>
 
 # Project Milestones
 
