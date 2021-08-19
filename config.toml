@@ -8,7 +8,7 @@ title = "Punit Lodha"
 compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 # Taxonomies
 taxonomies = [
@@ -24,7 +24,7 @@ taxonomies = "on"
 
 [markdown]
 highlight_code = true
-highlight_theme = "gruvbox-dark"
+highlight_theme = "ayu-dark"
 
 [extra]
 navbar_items = [
