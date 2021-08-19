@@ -1,6 +1,6 @@
 +++
 title="GSoC Final Report"
-date=2021-08-17
+date=2021-08-19
 
 [taxonomies]
 categories = ["GSoC"]
