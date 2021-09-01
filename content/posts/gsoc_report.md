@@ -180,7 +180,7 @@ mod example_mod {
     //! Documentation for example_mod
 }
 ```
-Then use `cargo doc` command to build the documentation. For example, this is the documentation for my project
+Then, we can generate the documentation using the `cargo doc` command. For example, this is the documentation for my project
 
 <img src="/images/doc.png" alt="CCExtractor documentation"> 
 
