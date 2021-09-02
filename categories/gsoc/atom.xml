@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Punit Lodha - GSoC</title>
+	<link href="https://punitlodha.github.io/categories/gsoc/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://punitlodha.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-08-19T00:00:00+00:00</updated>
+	<id>https://punitlodha.github.io/categories/gsoc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>GSoC Final Report</title>
+		<published>2021-08-19T00:00:00+00:00</published>
+		<updated>2021-08-19T00:00:00+00:00</updated>
+		<link href="https://punitlodha.github.io/posts/gsoc-report/" type="text/html"/>
+		<id>https://punitlodha.github.io/posts/gsoc-report/</id>
+		<content type="html">&lt;p&gt;Recently, I was selected as GSoC student with CCExtractor for the rewrite in rust project. For the past few months I have been working on it, and here is the final report...&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;img id=&quot;gsoc&quot; src=&quot;&#x2F;images&#x2F;logos.jpg&quot; alt=&quot;GSoC logo&quot;&gt; 
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;This Project involves rewriting&#x2F;porting the CEA-708 decoder to rust. CEA-708 is the standard for closed captioning for ATSC digital television (DTV) streams in the US and a few other countries. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;project-details&quot;&gt;Project Details&lt;&#x2F;h1&gt;
+&lt;p&gt;Organisation:- &lt;a href=&quot;https:&#x2F;&#x2F;summerofcode.withgoogle.com&#x2F;organizations&#x2F;5433564985819136&#x2F;&quot;&gt;CCExtractor&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Project:- &lt;a href=&quot;https:&#x2F;&#x2F;summerofcode.withgoogle.com&#x2F;projects&#x2F;#5980303367077888&quot;&gt;Rewrite 708 decoder in Rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Source Code:- &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;project-milestones&quot;&gt;Project Milestones&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve timing to be in sync with the samples.&lt;&#x2F;li&gt;
+&lt;li&gt;Perfect rendering, limited only by the output format.&lt;&#x2F;li&gt;
+&lt;li&gt;Full support to all languages for which samples are available.&lt;&#x2F;li&gt;
+&lt;li&gt;Improve the documentation of the code, using rustdoc.&lt;&#x2F;li&gt;
+&lt;li&gt;Implement testing using rust’s inbuilt testing features.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;prs&quot;&gt;PRs&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rust rewrite&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1350&quot;&gt;#1350&lt;&#x2F;a&gt; - Update function declarations and naming style&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1351&quot;&gt;#1351&lt;&#x2F;a&gt; - Add rust library&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1353&quot;&gt;#1353&lt;&#x2F;a&gt; - Update cmake for unix platforms&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1355&quot;&gt;#1355&lt;&#x2F;a&gt; - Add CI and docs for rust lib&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1358&quot;&gt;#1358&lt;&#x2F;a&gt; - Add functions to rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1360&quot;&gt;#1360&lt;&#x2F;a&gt; - Add few commands and refactor the code&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1361&quot;&gt;#1361&lt;&#x2F;a&gt; - Added DSW, DFx, some C0 and extended commands&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1363&quot;&gt;#1363&lt;&#x2F;a&gt; - Add Pen Presets and timing functions&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1364&quot;&gt;#1364&lt;&#x2F;a&gt; - Add tv_screen module, copy to screen and other functions&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1368&quot;&gt;#1368&lt;&#x2F;a&gt; - Added srt writer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1372&quot;&gt;#1372&lt;&#x2F;a&gt; - Add writers for transcripts and SAMI&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1374&quot;&gt;#1374&lt;&#x2F;a&gt; - Update documentation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Improve timing&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1319&quot;&gt;#1319&lt;&#x2F;a&gt; - Fix 708 timing issue&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Bug fixes&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1304&quot;&gt;#1304&lt;&#x2F;a&gt; - Ignore extra padding data in the current_packet&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1325&quot;&gt;#1325&lt;&#x2F;a&gt; - Revert #1304&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1338&quot;&gt;#1338&lt;&#x2F;a&gt; - Fix min and max fts when PTS resets&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1342&quot;&gt;#1342&lt;&#x2F;a&gt; - Fix timing zero-ing out, when Direct Rollup is selected&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1344&quot;&gt;#1344&lt;&#x2F;a&gt; - Fix for missing subtitles&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1345&quot;&gt;#1345&lt;&#x2F;a&gt; - Fix column length&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CCExtractor&#x2F;ccextractor&#x2F;pull&#x2F;1356&quot;&gt;#1356&lt;&#x2F;a&gt; - Update win_iconv path&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;implementation&quot;&gt;Implementation&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ffi&quot;&gt;FFI&lt;&#x2F;h2&gt;
+&lt;p&gt;Initial work started with creating FFI(Foreign Function Interface) bindings for C code. FFI allows rust code to interact with other languages. I used &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rust-bindgen&quot;&gt;rust-bindgen&lt;&#x2F;a&gt; which automatically generates Rust FFI bindings to C code. &lt;&#x2F;p&gt;
+&lt;p&gt;rust-bindgen requires a header file for which bindings are to be generated. &lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; wrapper.h 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_decoders_708.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_decoders_common.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_dtvcc.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_decoders_708_output.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_decoders_708_encoding.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;ccx_common_timing.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;..&#x2F;lib_ccx&#x2F;lib_ccx.h&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then we call bindgen in a &lt;a href=&quot;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;cargo&#x2F;reference&#x2F;build-scripts.html&quot;&gt;build script&lt;&#x2F;a&gt; to generate the bindings.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;bindgen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;Builder&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;default()
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; The input header we would like to generate
+&#x2F;&#x2F; bindings for.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;header&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;wrapper.h&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; Tell cargo to invalidate the built crate whenever any of the
+&#x2F;&#x2F; included header files changed.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;parse_callbacks&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#39bae6;&quot;&gt;Box&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;new(bindgen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;CargoCallbacks))
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; Finish the builder and generate the bindings.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;generate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; Unwrap the Result and panic on failure.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;expect&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;Unable to generate bindings&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;For example, bindings for this struct&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;typedef struct&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; dtvcc_pen_attribs
+{
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; pen_size&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; offset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; text_tag&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; font_tag&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; edge_type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; underline&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; italic&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;} &lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;dtvcc_pen_attribs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;is generated as follows&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;#&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;repr&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(C)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;#&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;derive&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(Debug&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; Copy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; Clone)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;dtvcc_pen_attribs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;{
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;pen_size&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;text_tag&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;font_tag&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;edge_type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;underline&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;italic&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: ::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;std&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;os&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;raw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;c_int,
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;decoder&quot;&gt;Decoder&lt;&#x2F;h2&gt;
+&lt;p&gt;Next part was to implement the 708 decoder. I used &lt;a href=&quot;https:&#x2F;&#x2F;shop.cta.tech&#x2F;products&#x2F;digital-television-dtv-closed-captioning&quot;&gt;CEA-708-E&lt;&#x2F;a&gt; as a reference for the implementation. There are 5 layers in the DTVCC(digital television closed captioning) data framework. Similar to the OSI Reference Model, each of these layers provides particular services as shown:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Layer&lt;&#x2F;th&gt;&lt;th&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;DTVCC Interpretation Layer&lt;&#x2F;td&gt;&lt;td&gt;Specification of Window appearance and content, and Synchronization of Command Interpretation to the Display of video&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;DTVCC Coding Layer&lt;&#x2F;td&gt;&lt;td&gt;Parsing of Syntax&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;DTVCC Service Layer&lt;&#x2F;td&gt;&lt;td&gt;Demultiplexing of Caption Services&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;DTVCC Packet Layer&lt;&#x2F;td&gt;&lt;td&gt;Resynchronization of Data Stream&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;DTVCC Transport Layer&lt;&#x2F;td&gt;&lt;td&gt;Extraction of closed caption data from parent transport system, e.g. MPEG user data&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;layers.png&quot; alt=&quot;DTVCC Layers&quot;&gt; 
+&lt;p&gt;Interpretation layer involved parsing of the data according to different commands. Examples of some commands are DSW(Display Windows), HDW(Hide Windows), SWA(Set Window Attributes), SPC(Set Pen Color) etc.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;improve-timing&quot;&gt;Improve timing&lt;&#x2F;h2&gt;
+&lt;p&gt;Initially, subtitles were off by about 1-2 seconds. I looked at the implementations of all commands and none seemed to be causing the issue. After lots of debugging, it turned out the problem was hiding in plain sight. CC data comes in the form of packets. We get 2 bytes of the packet at a time. Once the packet is complete, we parse it. &lt;&#x2F;p&gt;
+&lt;p&gt;The issue was in detecting if the packet is complete. Previous code was processing the packet once we get the header for next packet. This introduced a delay in packet processing thus subtitles were delayed.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; Previous Code
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;process_data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(cc_data){
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;is_header&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;() {
+        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;process_prev_packet&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;} &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;{
+        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;add_data_to_packet&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(cc_data)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;}
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We also get the packet length in the header. So after adding the 2 bytes to the packet, we can check if the packet is complete by checking its length, without waiting for the next packet header. This improved subtitle timing a lot and reduced the delay to less than 200ms&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; Current Code
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;process_data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(cc_data) {
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;add_data_to_packet&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(cc_data)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; packet&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;() &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;==&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt; len_from_packet_header {
+        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;process_packet&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;}
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;&#x2F;h2&gt;
+&lt;p&gt;Rust ships with a tool called rustdoc which generates documentation for Rust projects. 
+The &lt;code&gt;&#x2F;&#x2F;&#x2F;&lt;&#x2F;code&gt; syntax , called an outer documentation, is used to document the item present after it. It is generally used for functions, enums, structs, etc.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F;&#x2F; This is the main function
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(){
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;println!&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;Hello world!&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;)
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;There is another syntax: &lt;code&gt;&#x2F;&#x2F;!&lt;&#x2F;code&gt;, called an inner documentation, which is used to document the item it is present inside. It is often used when documenting the entire crate, or a module &lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;mod &lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;example_mod &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;{
+    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F;! Documentation for example_mod
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then, we can generate the documentation using the &lt;code&gt;cargo doc&lt;&#x2F;code&gt; command. For example, this is the documentation for my project,&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;doc.png&quot; alt=&quot;CCExtractor documentation&quot;&gt; 
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;&#x2F;h2&gt;
+&lt;p&gt;CCExtractor has a &lt;a href=&quot;https:&#x2F;&#x2F;sampleplatform.ccextractor.org&#x2F;&quot;&gt;Sample Platform&lt;&#x2F;a&gt; which contains video samples shared with CCExtractor over the years. CI was setup so that the code will be tested on all the videos available with SP.&lt;&#x2F;p&gt;
+&lt;p&gt;Example of a CI run,
+&lt;img src=&quot;&#x2F;images&#x2F;SP.png&quot; alt=&quot;CCExtractor Sample Platform&quot;&gt; &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;&#x2F;h1&gt;
+&lt;p&gt;I would like to thank my mentor &lt;strong&gt;Carlos Fernandez&lt;&#x2F;strong&gt; for helping and guiding me throughout the project. It was a great experience and I got to learn a lot from him. Also, thanks to CCExtractor for giving me this opportunity to work on something amazing.&lt;&#x2F;p&gt;
+&lt;p&gt;I would also like to thank &lt;strong&gt;Willem Van Iseghem&lt;&#x2F;strong&gt;, for helping me with setting up the testing of rust code on the different video samples available on the &lt;a href=&quot;https:&#x2F;&#x2F;sampleplatform.ccextractor.org&#x2F;&quot;&gt;Sample Platform&lt;&#x2F;a&gt;. It made the task of testing the rust code much easier.&lt;&#x2F;p&gt;
+&lt;p&gt;Finally, thanks to Google for organizing such a great program that helps students from all over the world. &lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
