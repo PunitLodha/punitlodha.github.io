@@ -36,30 +36,30 @@ Source Code:- <https://github.com/CCExtractor/ccextractor>
 
 # PRs
 - Rust rewrite
-    - [#1350](https://github.com/CCExtractor/ccextractor/pulls/1350) - Update function declarations and naming style
-    - [#1351](https://github.com/CCExtractor/ccextractor/pulls/1351) - Add rust library
-    - [#1353](https://github.com/CCExtractor/ccextractor/pulls/1353) - Update cmake for unix platforms
-    - [#1355](https://github.com/CCExtractor/ccextractor/pulls/1355) - Add CI and docs for rust lib
-    - [#1358](https://github.com/CCExtractor/ccextractor/pulls/1358) - Add functions to rust
-    - [#1360](https://github.com/CCExtractor/ccextractor/pulls/1360) - Add few commands and refactor the code
-    - [#1361](https://github.com/CCExtractor/ccextractor/pulls/1361) - Added DSW, DFx, some C0 and extended commands
-    - [#1363](https://github.com/CCExtractor/ccextractor/pulls/1363) - Add Pen Presets and timing functions
-    - [#1364](https://github.com/CCExtractor/ccextractor/pulls/1364) - Add tv_screen module, copy to screen and other functions
-    - [#1368](https://github.com/CCExtractor/ccextractor/pulls/1368) - Added srt writer
-    - [#1372](https://github.com/CCExtractor/ccextractor/pulls/1372) - Add writers for transcripts and SAMI
-    - [#1374](https://github.com/CCExtractor/ccextractor/pulls/1374) - Update documentation
+    - [#1350](https://github.com/CCExtractor/ccextractor/pull/1350) - Update function declarations and naming style
+    - [#1351](https://github.com/CCExtractor/ccextractor/pull/1351) - Add rust library
+    - [#1353](https://github.com/CCExtractor/ccextractor/pull/1353) - Update cmake for unix platforms
+    - [#1355](https://github.com/CCExtractor/ccextractor/pull/1355) - Add CI and docs for rust lib
+    - [#1358](https://github.com/CCExtractor/ccextractor/pull/1358) - Add functions to rust
+    - [#1360](https://github.com/CCExtractor/ccextractor/pull/1360) - Add few commands and refactor the code
+    - [#1361](https://github.com/CCExtractor/ccextractor/pull/1361) - Added DSW, DFx, some C0 and extended commands
+    - [#1363](https://github.com/CCExtractor/ccextractor/pull/1363) - Add Pen Presets and timing functions
+    - [#1364](https://github.com/CCExtractor/ccextractor/pull/1364) - Add tv_screen module, copy to screen and other functions
+    - [#1368](https://github.com/CCExtractor/ccextractor/pull/1368) - Added srt writer
+    - [#1372](https://github.com/CCExtractor/ccextractor/pull/1372) - Add writers for transcripts and SAMI
+    - [#1374](https://github.com/CCExtractor/ccextractor/pull/1374) - Update documentation
 
 - Improve timing
-    - [#1319](https://github.com/CCExtractor/ccextractor/pulls/1319) - Fix 708 timing issue
+    - [#1319](https://github.com/CCExtractor/ccextractor/pull/1319) - Fix 708 timing issue
     
 - Bug fixes
-    - [#1304](https://github.com/CCExtractor/ccextractor/pulls/1304) - Ignore extra padding data in the current_packet
-    - [#1325](https://github.com/CCExtractor/ccextractor/pulls/1325) - Revert #1304
-    - [#1338](https://github.com/CCExtractor/ccextractor/pulls/1338) - Fix min and max fts when PTS resets
-    - [#1342](https://github.com/CCExtractor/ccextractor/pulls/1342) - Fix timing zero-ing out, when Direct Rollup is selected
-    - [#1344](https://github.com/CCExtractor/ccextractor/pulls/1344) - Fix for missing subtitles
-    - [#1345](https://github.com/CCExtractor/ccextractor/pulls/1345) - Fix column length
-    - [#1356](https://github.com/CCExtractor/ccextractor/pulls/1356) - Update win_iconv path
+    - [#1304](https://github.com/CCExtractor/ccextractor/pull/1304) - Ignore extra padding data in the current_packet
+    - [#1325](https://github.com/CCExtractor/ccextractor/pull/1325) - Revert #1304
+    - [#1338](https://github.com/CCExtractor/ccextractor/pull/1338) - Fix min and max fts when PTS resets
+    - [#1342](https://github.com/CCExtractor/ccextractor/pull/1342) - Fix timing zero-ing out, when Direct Rollup is selected
+    - [#1344](https://github.com/CCExtractor/ccextractor/pull/1344) - Fix for missing subtitles
+    - [#1345](https://github.com/CCExtractor/ccextractor/pull/1345) - Fix column length
+    - [#1356](https://github.com/CCExtractor/ccextractor/pull/1356) - Update win_iconv path
 
 # Implementation
 
@@ -180,14 +180,14 @@ mod example_mod {
     //! Documentation for example_mod
 }
 ```
-Then, we can generate the documentation using the `cargo doc` command. For example, this is the documentation for my project
+Then, we can generate the documentation using the `cargo doc` command. For example, this is the documentation for my project,
 
 <img src="/images/doc.png" alt="CCExtractor documentation"> 
 
 ## Testing
-CCExtractor has a [Sample Platform](https://sampleplatform.ccextractor.org/). SP contains video samples shared to CCExtractor over the years. CI was setup so that the code will be tested on all the videos available with SP.
+CCExtractor has a [Sample Platform](https://sampleplatform.ccextractor.org/) which contains video samples shared with CCExtractor over the years. CI was setup so that the code will be tested on all the videos available with SP.
 
-Example of a CI run:-
+Example of a CI run,
 <img src="/images/SP.png" alt="CCExtractor Sample Platform"> 
 
 # Acknowledgment
