@@ -2,4 +2,8 @@
 title = "Punit Lodha"
 +++
 
-Hi, I am **Punit Lodha**, a Masters student in Computer Science at Saarland University. Last year, I interned at Emotech where I worked with rust to build a library for media streaming and an API for rendering 3D animations. I was selected as a GSoC student in 2021 with [CCExtractor](https://ccextractor.org/) for a [project](https://summerofcode.withgoogle.com/projects/#5980303367077888) in rust. I have also interned as a frontend developer and an UI/UX designer. Other than that, I have also been exploring [distributed systems](http://nil.csail.mit.edu/6.824/2020/), compilers. In my free time you'll find me reading books, playing board games, chess, and ricing my linux desktop :)
+Hi, I am **Punit Lodha**, a Masters student in Computer Science at Saarland University. I am currently working on my Master's thesis to improve video streaming quality of experience using partially reliable transport and QUIC. I have experience with rust through my two internships and a Google Summer of Code 21' [project](https://summerofcode.withgoogle.com/projects/#5980303367077888). I also have been a mentor for about 5 years now, first mentoring my juniors in our college coding club DJ Unicode, and later as a mentor for CCExtractor in Google Summer of Code in 2022, 2023 and 2024.
+
+I am open to work as a Software Engineer preferably in the backend, networks, distributed system domains.
+
+In my free time you'll find me hiking, reading books, playing board games, chess, and ricing my linux desktop :)
