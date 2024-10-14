@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  
+  
+  
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" rel="stylesheet" />
+  <link href="https://punitlodha.github.io/deep-thought.css" rel="stylesheet" />
+  <link href="https://punitlodha.github.io/site.css" rel="stylesheet" />
+
+  <title>
+    
+Punit Lodha | GSoC Final Report
+
+  </title>
+
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;punitlodha.github.io">Punit Lodha</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;punitlodha.github.io&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;punitlodha.github.io&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;punitlodha.github.io&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;punitlodha.github.io&#x2F;categories">
+            Categories
+          </a>
+          
+          
+          
+          <!-- <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            GSoC Final Report
+          </h1>
+          <p class="subtitle"></p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Punit Lodha published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2021-08-19">August 19, 2021</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>6 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>1038 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://punitlodha.github.io/categories/gsoc/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>GSoC</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://punitlodha.github.io/tags/gsoc/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>GSoC</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://punitlodha.github.io/tags/rust/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>rust</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>Recently, I was selected as GSoC student with CCExtractor for the rewrite in rust project. For the past few months I have been working on it, and here is the final report...</p>
+<span id="continue-reading"></span><img id="gsoc" src="/images/logos.jpg" alt="GSoC logo"> 
+<h1 id="introduction">Introduction</h1>
+<p>This Project involves rewriting/porting the CEA-708 decoder to rust. CEA-708 is the standard for closed captioning for ATSC digital television (DTV) streams in the US and a few other countries.</p>
+<h1 id="project-details">Project Details</h1>
+<p>Organisation:- <a href="https://summerofcode.withgoogle.com/organizations/5433564985819136/">CCExtractor</a></p>
+<p>Project:- <a href="https://summerofcode.withgoogle.com/projects/#5980303367077888">Rewrite 708 decoder in Rust</a></p>
+<p>Source Code:- <a href="https://github.com/CCExtractor/ccextractor">https://github.com/CCExtractor/ccextractor</a></p>
+<h1 id="project-milestones">Project Milestones</h1>
+<ul>
+<li>Improve timing to be in sync with the samples.</li>
+<li>Perfect rendering, limited only by the output format.</li>
+<li>Full support to all languages for which samples are available.</li>
+<li>Improve the documentation of the code, using rustdoc.</li>
+<li>Implement testing using rust’s inbuilt testing features.</li>
+</ul>
+<h1 id="prs">PRs</h1>
+<ul>
+<li>
+<p>Rust rewrite</p>
+<ul>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1350">#1350</a> - Update function declarations and naming style</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1351">#1351</a> - Add rust library</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1353">#1353</a> - Update cmake for unix platforms</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1355">#1355</a> - Add CI and docs for rust lib</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1358">#1358</a> - Add functions to rust</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1360">#1360</a> - Add few commands and refactor the code</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1361">#1361</a> - Added DSW, DFx, some C0 and extended commands</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1363">#1363</a> - Add Pen Presets and timing functions</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1364">#1364</a> - Add tv_screen module, copy to screen and other functions</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1368">#1368</a> - Added srt writer</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1372">#1372</a> - Add writers for transcripts and SAMI</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1374">#1374</a> - Update documentation</li>
+</ul>
+</li>
+<li>
+<p>Improve timing</p>
+<ul>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1319">#1319</a> - Fix 708 timing issue</li>
+</ul>
+</li>
+<li>
+<p>Bug fixes</p>
+<ul>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1304">#1304</a> - Ignore extra padding data in the current_packet</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1325">#1325</a> - Revert #1304</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1338">#1338</a> - Fix min and max fts when PTS resets</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1342">#1342</a> - Fix timing zero-ing out, when Direct Rollup is selected</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1344">#1344</a> - Fix for missing subtitles</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1345">#1345</a> - Fix column length</li>
+<li><a href="https://github.com/CCExtractor/ccextractor/pull/1356">#1356</a> - Update win_iconv path</li>
+</ul>
+</li>
+</ul>
+<h1 id="implementation">Implementation</h1>
+<h2 id="ffi">FFI</h2>
+<p>Initial work started with creating FFI(Foreign Function Interface) bindings for C code. FFI allows rust code to interact with other languages. I used <a href="https://github.com/rust-lang/rust-bindgen">rust-bindgen</a> which automatically generates Rust FFI bindings to C code.</p>
+<p>rust-bindgen requires a header file for which bindings are to be generated.</p>
+<pre data-lang="C" style="background-color:#0f1419;color:#bfbab0;" class="language-C "><code class="language-C" data-lang="C"><span style="font-style:italic;color:#5c6773;">// wrapper.h 
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_decoders_708.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_decoders_common.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_dtvcc.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_decoders_708_output.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_decoders_708_encoding.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/ccx_common_timing.h&quot;
+</span><span style="color:#ff7733;">#include </span><span style="color:#c2d94c;">&quot;../lib_ccx/lib_ccx.h&quot;
+</span></code></pre>
+<p>Then we call bindgen in a <a href="https://doc.rust-lang.org/cargo/reference/build-scripts.html">build script</a> to generate the bindings.</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span>bindgen</span><span style="color:#f29668;">::</span><span>Builder</span><span style="color:#f29668;">::</span><span>default()
+</span><span style="font-style:italic;color:#5c6773;">// The input header we would like to generate
+</span><span style="font-style:italic;color:#5c6773;">// bindings for.
+</span><span style="color:#f29668;">.</span><span style="color:#f07178;">header</span><span>(</span><span style="color:#c2d94c;">&quot;wrapper.h&quot;</span><span>)
+</span><span style="font-style:italic;color:#5c6773;">// Tell cargo to invalidate the built crate whenever any of the
+</span><span style="font-style:italic;color:#5c6773;">// included header files changed.
+</span><span style="color:#f29668;">.</span><span style="color:#f07178;">parse_callbacks</span><span>(</span><span style="font-style:italic;color:#39bae6;">Box</span><span style="color:#f29668;">::</span><span>new(bindgen</span><span style="color:#f29668;">::</span><span>CargoCallbacks))
+</span><span style="font-style:italic;color:#5c6773;">// Finish the builder and generate the bindings.
+</span><span style="color:#f29668;">.</span><span style="color:#f07178;">generate</span><span>()
+</span><span style="font-style:italic;color:#5c6773;">// Unwrap the Result and panic on failure.
+</span><span style="color:#f29668;">.</span><span style="color:#f07178;">expect</span><span>(</span><span style="color:#c2d94c;">&quot;Unable to generate bindings&quot;</span><span>)</span><span style="color:#bfbab0cc;">;
+</span></code></pre>
+<p>For example, bindings for this struct</p>
+<pre data-lang="C" style="background-color:#0f1419;color:#bfbab0;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#ff7733;">typedef struct</span><span> dtvcc_pen_attribs
+</span><span>{
+</span><span>    </span><span style="color:#ff7733;">int</span><span> pen_size</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> offset</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> text_tag</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> font_tag</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> edge_type</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> underline</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">int</span><span> italic</span><span style="color:#bfbab0cc;">;
+</span><span>} </span><span style="color:#59c2ff;">dtvcc_pen_attribs</span><span style="color:#bfbab0cc;">;
+</span></code></pre>
+<p>is generated as follows</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#bfbab0cc;">#</span><span>[</span><span style="color:#ffb454;">repr</span><span>(C)]
+</span><span style="color:#bfbab0cc;">#</span><span>[</span><span style="color:#ffb454;">derive</span><span>(Debug</span><span style="color:#bfbab0cc;">,</span><span> Copy</span><span style="color:#bfbab0cc;">,</span><span> Clone)]
+</span><span style="color:#ff7733;">pub struct </span><span style="color:#59c2ff;">dtvcc_pen_attribs </span><span>{
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>pen_size</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>offset</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>text_tag</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>font_tag</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>edge_type</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>underline</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>    </span><span style="color:#ff7733;">pub </span><span>italic</span><span style="color:#bfbab0cc;">: ::</span><span>std</span><span style="color:#f29668;">::</span><span>os</span><span style="color:#f29668;">::</span><span>raw</span><span style="color:#f29668;">::</span><span>c_int,
+</span><span>}
+</span></code></pre>
+<h2 id="decoder">Decoder</h2>
+<p>Next part was to implement the 708 decoder. I used <a href="https://shop.cta.tech/products/digital-television-dtv-closed-captioning">CEA-708-E</a> as a reference for the implementation. There are 5 layers in the DTVCC(digital television closed captioning) data framework. Similar to the OSI Reference Model, each of these layers provides particular services as shown:</p>
+<table><thead><tr><th>Layer</th><th>Description</th></tr></thead><tbody>
+<tr><td>DTVCC Interpretation Layer</td><td>Specification of Window appearance and content, and Synchronization of Command Interpretation to the Display of video</td></tr>
+<tr><td>DTVCC Coding Layer</td><td>Parsing of Syntax</td></tr>
+<tr><td>DTVCC Service Layer</td><td>Demultiplexing of Caption Services</td></tr>
+<tr><td>DTVCC Packet Layer</td><td>Resynchronization of Data Stream</td></tr>
+<tr><td>DTVCC Transport Layer</td><td>Extraction of closed caption data from parent transport system, e.g. MPEG user data</td></tr>
+</tbody></table>
+<img src="/images/layers.png" alt="DTVCC Layers"> 
+<p>Interpretation layer involved parsing of the data according to different commands. Examples of some commands are DSW(Display Windows), HDW(Hide Windows), SWA(Set Window Attributes), SPC(Set Pen Color) etc.</p>
+<h2 id="improve-timing">Improve timing</h2>
+<p>Initially, subtitles were off by about 1-2 seconds. I looked at the implementations of all commands and none seemed to be causing the issue. After lots of debugging, it turned out the problem was hiding in plain sight. CC data comes in the form of packets. We get 2 bytes of the packet at a time. Once the packet is complete, we parse it.</p>
+<p>The issue was in detecting if the packet is complete. Previous code was processing the packet once we get the header for next packet. This introduced a delay in packet processing thus subtitles were delayed.</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="font-style:italic;color:#5c6773;">// Previous Code
+</span><span style="color:#ff7733;">fn </span><span style="color:#ffb454;">process_data</span><span>(cc_data){
+</span><span>    </span><span style="color:#ff7733;">if </span><span style="color:#f07178;">is_header</span><span>() {
+</span><span>        </span><span style="color:#f07178;">process_prev_packet</span><span>()</span><span style="color:#bfbab0cc;">;
+</span><span>    } </span><span style="color:#ff7733;">else </span><span>{
+</span><span>        </span><span style="color:#f07178;">add_data_to_packet</span><span>(cc_data)</span><span style="color:#bfbab0cc;">;
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<p>We also get the packet length in the header. So after adding the 2 bytes to the packet, we can check if the packet is complete by checking its length, without waiting for the next packet header. This improved subtitle timing a lot and reduced the delay to less than 200ms</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="font-style:italic;color:#5c6773;">// Current Code
+</span><span style="color:#ff7733;">fn </span><span style="color:#ffb454;">process_data</span><span>(cc_data) {
+</span><span>    </span><span style="color:#f07178;">add_data_to_packet</span><span>(cc_data)</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">if</span><span> packet</span><span style="color:#f29668;">.</span><span style="color:#f07178;">len</span><span>() </span><span style="color:#f29668;">==</span><span> len_from_packet_header {
+</span><span>        </span><span style="color:#f07178;">process_packet</span><span>()</span><span style="color:#bfbab0cc;">;
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<h2 id="documentation">Documentation</h2>
+<p>Rust ships with a tool called rustdoc which generates documentation for Rust projects.
+The <code>///</code> syntax , called an outer documentation, is used to document the item present after it. It is generally used for functions, enums, structs, etc.</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="font-style:italic;color:#5c6773;">/// This is the main function
+</span><span style="color:#ff7733;">fn </span><span style="color:#ffb454;">main</span><span>(){
+</span><span>    </span><span style="color:#f07178;">println!</span><span>(</span><span style="color:#c2d94c;">&quot;Hello world!&quot;</span><span>)
+</span><span>}
+</span></code></pre>
+<p>There is another syntax: <code>//!</code>, called an inner documentation, which is used to document the item it is present inside. It is often used when documenting the entire crate, or a module</p>
+<pre data-lang="rust" style="background-color:#0f1419;color:#bfbab0;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#ff7733;">mod </span><span style="color:#59c2ff;">example_mod </span><span>{
+</span><span>    </span><span style="font-style:italic;color:#5c6773;">//! Documentation for example_mod
+</span><span>}
+</span></code></pre>
+<p>Then, we can generate the documentation using the <code>cargo doc</code> command. For example, this is the documentation for my project,</p>
+<img src="/images/doc.png" alt="CCExtractor documentation"> 
+<h2 id="testing">Testing</h2>
+<p>CCExtractor has a <a href="https://sampleplatform.ccextractor.org/">Sample Platform</a> which contains video samples shared with CCExtractor over the years. CI was setup so that the code will be tested on all the videos available with SP.</p>
+<p>Example of a CI run,
+<img src="/images/SP.png" alt="CCExtractor Sample Platform"></p>
+<h1 id="acknowledgment">Acknowledgment</h1>
+<p>I would like to thank my mentor <strong>Carlos Fernandez</strong> for helping and guiding me throughout the project. It was a great experience and I got to learn a lot from him. Also, thanks to CCExtractor for giving me this opportunity to work on something amazing.</p>
+<p>I would also like to thank <strong>Willem Van Iseghem</strong>, for helping me with setting up the testing of rust code on the different video samples available on the <a href="https://sampleplatform.ccextractor.org/">Sample Platform</a>. It made the task of testing the rust code much easier.</p>
+<p>Finally, thanks to Google for organizing such a great program that helps students from all over the world.</p>
+
+          </div>
+        </article>
+      </div>
+      
+      <div class="column is-2 is-hidden-mobile">
+        <aside class="menu" style="position: sticky; top: 48px">
+          <p class="heading has-text-weight-bold">Contents</p>
+          <ul class="menu-list">
+            
+            <li>
+              <a id="link-introduction" class="toc is-size-7 is-active"
+                href="https://punitlodha.github.io/posts/gsoc-report/#introduction">
+                Introduction
+              </a>
+              
+            </li>
+            
+            <li>
+              <a id="link-project-details" class="toc is-size-7 "
+                href="https://punitlodha.github.io/posts/gsoc-report/#project-details">
+                Project Details
+              </a>
+              
+            </li>
+            
+            <li>
+              <a id="link-project-milestones" class="toc is-size-7 "
+                href="https://punitlodha.github.io/posts/gsoc-report/#project-milestones">
+                Project Milestones
+              </a>
+              
+            </li>
+            
+            <li>
+              <a id="link-prs" class="toc is-size-7 "
+                href="https://punitlodha.github.io/posts/gsoc-report/#prs">
+                PRs
+              </a>
+              
+            </li>
+            
+            <li>
+              <a id="link-implementation" class="toc is-size-7 "
+                href="https://punitlodha.github.io/posts/gsoc-report/#implementation">
+                Implementation
+              </a>
+              
+              <ul>
+                
+                <li>
+                  <a id="link-ffi" class="toc is-size-7" href="https://punitlodha.github.io/posts/gsoc-report/#ffi">
+                    FFI
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-decoder" class="toc is-size-7" href="https://punitlodha.github.io/posts/gsoc-report/#decoder">
+                    Decoder
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-improve-timing" class="toc is-size-7" href="https://punitlodha.github.io/posts/gsoc-report/#improve-timing">
+                    Improve timing
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-documentation" class="toc is-size-7" href="https://punitlodha.github.io/posts/gsoc-report/#documentation">
+                    Documentation
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-testing" class="toc is-size-7" href="https://punitlodha.github.io/posts/gsoc-report/#testing">
+                    Testing
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </li>
+            
+            <li>
+              <a id="link-acknowledgment" class="toc is-size-7 "
+                href="https://punitlodha.github.io/posts/gsoc-report/#acknowledgment">
+                Acknowledgment
+              </a>
+              
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+
+
+  
+
+
+
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://punitlodha.github.io/search_index.en.js"></script>
+  <script src="https://punitlodha.github.io/js/site.js"></script>
+
+  
+
+<script type="text/javascript">
+  const menuBarHeight = document.querySelector("nav.navbar").clientHeight;
+  const tocItems = document.querySelectorAll(".toc");
+  const navSections = new Array(tocItems.length);
+
+  tocItems.forEach((el, i) => {
+    let id = el.getAttribute("id").substring(5);
+    navSections[i] = document.getElementById(id);
+  })
+
+  function isVisible(tocIndex) {
+    const current = navSections[tocIndex];
+    const next = tocIndex < tocItems.length - 1 ? navSections[tocIndex + 1]
+      : document.querySelectorAll("section.section").item(1);
+
+    const c = current.getBoundingClientRect();
+    const n = next.getBoundingClientRect();
+    const h = (window.innerHeight || document.documentElement.clientHeight);
+
+    return (c.top <= h) && (n.top - menuBarHeight >= 0);
+  }
+
+  function activateIfVisible() {
+    for (b = true, i = 0; i < tocItems.length; i++) {
+      if (b && isVisible(i)) {
+        tocItems[i].classList.add('is-active');
+        b = false;
+      } else
+        tocItems[i].classList.remove('is-active');
+    }
+  }
+
+  var isTicking = null;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        activateIfVisible();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, false);
+</script>
+
+
+
+
+</body>
+
+</html>
