@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://punitlodha.github.io/sitemap.xml
